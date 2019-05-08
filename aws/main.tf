@@ -151,6 +151,7 @@ resource "aws_eks_cluster" "demo" {
     value = "${aws_eks_cluster.demo.endpoint}"
 }
 
+#create EKS cluster 
 provider "kubernetes" {
   host = "${aws_eks_cluster.demo.endpoint}"
 
